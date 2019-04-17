@@ -1,0 +1,36 @@
+body {
+  background-color: #917081;
+  color: #FFF5DE;	
+}
+#button {
+  margin-bottom: 3em;
+}
+.success, .error {
+  color: white;
+  padding: 5px;
+  margin: 5px 0 15px 0;
+  font-weight: bold;
+}
+.success {
+  background: green;
+}
+.error {
+  background: red;
+}
+.btn-success {
+  background-color: #B8D9C8;
+  border-color: transparent;
+  color: darkgreen;	
+}
+.fa.fa-tint {
+  color: #750E49;		
+} 
+.wine {
+  color: #750E49;
+}
+.container {
+  padding-top: 1.5em;
+}
+.form {
+	margin-top: 1em;
+}

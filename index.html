@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Wine List App">
+  <meta name="keywords" content="App,Wine">
+  <meta name="author" content="Maximiliano Diaz Garcia">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <!-- CSS links -->  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>AppWine</title>
+</head>
+<body>
+	<div class="container">
+    <h1 class="display-4 text-center">
+    <i class="fa fa-tint" aria-hidden="true"></i>My<span class="wine">Wine</span>App</h1>
+    <form class="form" id="wine-form">
+    <!-- Wine Name --> 
+      <div class="form-group"> 
+        <label for="name">Wine Name</label>
+        <input type="text" id="name" class="form-control">
+      </div>
+      <!-- Winery -->
+      <div class="form-group">
+        <label for="winery">Winery</label>
+        <input type="text" id="winery" class="form-control">
+      </div>
+      <!-- Grape -->
+      <div class="form-group">
+        <label for="grape">Grape</label>
+        <input type="text" id="grape" class="form-control">
+      </div>
+      <!-- Year -->
+      <div class="form-group">
+        <label for="year">Year</label>
+        <input type="text" id="year" class="form-control">
+      </div>
+      <!-- Comments -->
+      <div class="form-group">
+        <label for="exampleMessage">Comments</label>
+        <textarea id="comments" class="form-control" placeholder="Write your comment here …"></textarea>
+      </div>
+      <!-- ID -->
+      <div class="form-group">
+        <label for="idnum">ID</label>
+        <input type="text" id="idnum" class="form-control">
+      </div>
+      <!-- Submit Button -->
+      <div>
+        <button type="submit" value="Submit" id="button" class="btn btn-success btn-lg btn-block">Submit</button>
+      </div>
+    </form>
+    <div class="table-responsive">
+  		<table class="table table-hover table-dark">
+          <thead>
+            <tr>
+              <th scope="col">Winery</th>
+              <th scope="col">Name</th>
+             	<th scope="col">Grape</th>
+    	        <th scope="col">Year</th>
+    	        <th scope="col">Comments</th>
+    	        <th scope="col">ID</th>
+            </tr>
+          </thead>
+          <tbody id="wine-list"></tbody>
+      </table>
+    </div>      
+  </div>
+  
+  <!-- external JS link -->
+  <script src="app.js"></script>
+
+</body>
+</html>
