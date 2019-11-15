@@ -1,13 +1,11 @@
 // Wine Class
 class Wine {
 	constructor(winery, name, grape, year, comments) {
-		let idnum = 0;
 		this.winery = winery;
 		this.name = name;
 		this.grape = grape;
 		this.year = year;
 		this.comments = comments;
-		this.idnum++;
 	}
 }
 // UI Class
@@ -99,7 +97,7 @@ class Store {
 		const wines = Store.getWines();
 		// Loop throw wines Array
 		wines.forEach(function(wine, index) {
-			// If matches delete
+			// If matches, delete
 			if (wine.idnum === idnum) {
 			  wines.splice(index, 1);
 			}
